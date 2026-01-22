@@ -13,10 +13,10 @@ class MainController extends Controller
 
     function showArray() {
         $array = [
-            ['id' => 1, 'title' => 'продукт 1', 'price' => 500, 'path' => 'pict1.jpg'],
-            ['id' => 2, 'title' => 'продукт 2', 'price' => 500, 'path' => 'pict2.jpg'],
-            ['id' => 3, 'title' => 'продукт 3', 'price' => 500, 'path' => 'pict3.jpg'],
+            ['id' => 1, 'title' => 'Фотка Жорика 1', 'price' => 500, 'path' => 'image1.jpg'],
+            ['id' => 2, 'title' => 'Фотка Жорика 2', 'price' => 500, 'path' => 'image2.jpg'],
+            ['id' => 3, 'title' => 'Фотка Жорика 3', 'price' => 500, 'path' => 'image3.jpg'],
         ];
-        return view('home', compact('array'));
+        return view('array', compact('array'));
     }
 }
